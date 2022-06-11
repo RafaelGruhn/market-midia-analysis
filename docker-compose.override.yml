@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  postgres:
+    env_file:
+      - ./envs/postgres.env
+  django:
+    build:
+      context: ./django
+      target: core_proj
+      args:
+        MODE: development
+    env_file:
+      - ./envs/postgres.env
+    volumes:
+      - ./django/:/code/
+    ports:
+      - 0.0.0.0:8000:8000
+    environment:
+      MODE: development
+      LOGS_ROOT: /code/logs/development
