@@ -1,6 +1,0 @@
--r ./main.txt
--r ./ci.txt
-django-extensions
-behave-django
-ipython
-isort

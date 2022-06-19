@@ -12,6 +12,7 @@ services:
         MODE: development
     env_file:
       - ./envs/postgres.env
+      - ./envs/django.env
     volumes:
       - ./django/:/code/
     ports:

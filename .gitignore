@@ -36,3 +36,4 @@ web/ovecloud/ovecloud/media
 node_modules/
 builds/
 grafana.db
+*.env
