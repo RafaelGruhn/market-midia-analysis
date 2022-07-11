@@ -1,5 +1,5 @@
 """Development extension settings."""
-from core_proj.settings.main import *  # noqa pylint: disable=W0614,W0401
+from market_media.settings.main import *  # noqa pylint: disable=W0614,W0401
 
 DEBUG = True
 

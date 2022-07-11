@@ -2,7 +2,7 @@
 import logging.config
 import os
 
-from core_proj.settings.main import *  # noqa pylint: disable=W0614,W0401
+from market_media.settings.main import *  # noqa pylint: disable=W0614,W0401
 
 DEBUG = False
 
@@ -25,13 +25,13 @@ LOGGING = {
     },
     'filters': {
         'debug': {
-            '()': 'core_proj.log_filters.DebugFilter',
+            '()': 'market_media.log_filters.DebugFilter',
         },
         'info': {
-            '()': 'core_proj.log_filters.InfoFilter',
+            '()': 'market_media.log_filters.InfoFilter',
         },
         'error': {
-            '()': 'core_proj.log_filters.ErrorFilter',
+            '()': 'market_media.log_filters.ErrorFilter',
         },
     },
     'handlers': {

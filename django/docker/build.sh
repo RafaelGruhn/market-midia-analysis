@@ -12,4 +12,6 @@ else
     pip install -r ${DEFAULT_PATH}/ci.txt
 fi
 
+python -m spacy download en_core_web_sm
+
 exit 0

@@ -1,9 +1,8 @@
-"""Core_Proj main settings."""
+"""market_media main settings."""
 # pylint: disable=useless-suppression,ungrouped-imports,too-many-lines
 import os
 
 from django.utils.translation import gettext_lazy as _
-
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,7 +20,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-APP_NAME = "Core Project"
+APP_NAME = "Market Media Analysis"
 
 # Application definition
 DEFAULT_APPS = [
@@ -63,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'core_proj.urls'
+ROOT_URLCONF = 'market_media.urls'
 
 TEMPLATES = [
     {
@@ -81,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'core_proj.wsgi.application'
+#WSGI_APPLICATION = 'market_media.wsgi.application'
 
 DATABASES = {
     'default': {
@@ -137,7 +136,6 @@ STATICFILES_DIRS = [
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
 ]
 COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_PRECOMPILERS = [

@@ -7,11 +7,11 @@ import os
 from django.utils.version import get_version
 
 if os.getenv('MODE') == 'production':
-    from core_proj.settings.production import *  # pylint: disable=W0614,W0401
+    from market_media.settings.production import *  # pylint: disable=W0614,W0401
 elif os.getenv('MODE') == 'ci':
-    from core_proj.settings.ci import *  # pylint: disable=W0614,W0401
+    from market_media.settings.ci import *  # pylint: disable=W0614,W0401
 else:
-    from core_proj.settings.development import *  # pylint: disable=W0614,W0401
+    from market_media.settings.development import *  # pylint: disable=W0614,W0401
 
 with open(os.path.join(BASE_DIR, '..', 'VERSION'), 'r') as version_file:
     VERSION = version_file.read().strip().split('.')

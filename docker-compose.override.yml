@@ -7,7 +7,6 @@ services:
   django:
     build:
       context: ./django
-      target: core_proj
       args:
         MODE: development
     env_file:

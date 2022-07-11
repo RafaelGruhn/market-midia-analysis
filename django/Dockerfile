@@ -8,7 +8,6 @@ ARG MODE
 COPY ["requirements/", "docker/build.sh", "/tmp/"]
 RUN sh /tmp/build.sh /tmp/
 
-FROM builder AS core_proj
 RUN mkdir /code
 WORKDIR /code
 ADD . /code
